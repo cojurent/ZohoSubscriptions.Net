@@ -1,5 +1,5 @@
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: '**/*.csproj'
+    packagesToPack: 'src/ZohoSubscriptions.Net.csproj'
     versioningScheme: 'off'
