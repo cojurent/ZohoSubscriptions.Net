@@ -1,5 +1,6 @@
+# Package a project
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: 'src/ZohoSubscriptions.Net.csproj'
-    versioningScheme: 'off'
+    packagesToPack: '**/*.csproj'
+    packDestination: '$(Build.ArtifactStagingDirectory)'
